@@ -12,4 +12,11 @@ import lombok.ToString;
 public class Customer {
     private String name;
     private String country;
+    private String phone;
+    private String email;
+
+    public Customer(String name, String country) {
+        this.name = name;
+        this.country = country;
+    }
 }

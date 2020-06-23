@@ -2,7 +2,6 @@ package com.ranjit;
 
 import com.ranjit.dto.Person;
 import com.ranjit.enumeration.Gender;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +12,7 @@ public class ImperativeVsDeclarative {
         System.out.println("Imperative approach:");
         List<Person> females = new ArrayList<>();
         for (Person person : people) {
-            if(person.getGender().equals(Gender.FEMALE)){
+            if (person.getGender().equals(Gender.FEMALE)) {
                 females.add(person);
             }
         }

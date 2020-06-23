@@ -13,6 +13,7 @@ public class StreamExample {
 
     /**
      * Filter Only females
+     *
      * @param people
      * @return
      */
@@ -25,6 +26,7 @@ public class StreamExample {
 
     /**
      * Check if anyone is less that 18 years of age
+     *
      * @param people
      * @return
      */
@@ -37,6 +39,7 @@ public class StreamExample {
 
     /**
      * Check if no body is more than 30 Years of age
+     *
      * @param people
      * @return
      */
@@ -47,6 +50,7 @@ public class StreamExample {
 
     /**
      * Sort the list with age and name
+     *
      * @param people
      * @return
      */
@@ -58,6 +62,7 @@ public class StreamExample {
 
     /**
      * reverse the list with age, name
+     *
      * @param people
      * @return
      */
@@ -69,6 +74,7 @@ public class StreamExample {
 
     /**
      * Set of unique names.
+     *
      * @param people
      * @return
      */
@@ -80,6 +86,7 @@ public class StreamExample {
 
     /**
      * Oldest person
+     *
      * @param people
      * @return
      */
@@ -91,6 +98,7 @@ public class StreamExample {
 
     /**
      * youngest person.
+     *
      * @param people
      * @return
      */
@@ -102,6 +110,7 @@ public class StreamExample {
 
     /**
      * group by Gender
+     *
      * @param people
      * @return
      */

@@ -1,6 +1,5 @@
 package com.ranjit.dto;
 
-
 import com.ranjit.enumeration.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
