@@ -1,4 +1,4 @@
-package functional.programming.basic;
+package flatmap;
 
 import java.io.IOException;
 import java.nio.file.Files;
