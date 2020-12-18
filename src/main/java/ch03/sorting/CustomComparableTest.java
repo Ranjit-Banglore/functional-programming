@@ -6,12 +6,11 @@ import java.util.Comparator;
 
 public class CustomComparableTest {
     public static void main(String[] args) {
-        var animals = Arrays.asList(new Animal[]{
-                new Animal(10, "Dog", 20),
+        var animals = Arrays.asList(new Animal(10, "Dog", 20),
                 new Animal(5, "Cat", 8),
                 new Animal(13, "Elephant", 1000),
                 new Animal(2, "Camel", 500),
-                new Animal(10, "PussyCat", 12)});
+                new Animal(10, "PussyCat", 12));
         Collections.sort(animals);
         System.out.println(String.format("using default compareTo with id : \n %s", animals));
         var comparator1 = new Comparator<Animal>() {

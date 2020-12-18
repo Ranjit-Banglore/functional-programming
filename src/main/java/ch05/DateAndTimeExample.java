@@ -1,6 +1,5 @@
 package ch05;
 
-import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -15,11 +14,11 @@ public class DateAndTimeExample {
         System.out.println(ZonedDateTime.now());
         // creating LocalDate, LocalTime and LocalDateTime
 
-        LocalDate localDate= LocalDate.of(2020, 11, 8);
+        LocalDate localDate = LocalDate.of(2020, 11, 8);
         System.out.println(localDate);
-        LocalTime localTime = LocalTime.of(22,34, 12);
+        LocalTime localTime = LocalTime.of(22, 34, 12);
         System.out.println(localTime);
-        LocalDateTime dt = LocalDateTime.of(localDate,localTime);
+        LocalDateTime dt = LocalDateTime.of(localDate, localTime);
         System.out.println(dt);
         System.out.println(localDate.format(DateTimeFormatter.ISO_DATE));
         System.out.println(localTime.format(DateTimeFormatter.ISO_LOCAL_TIME));
