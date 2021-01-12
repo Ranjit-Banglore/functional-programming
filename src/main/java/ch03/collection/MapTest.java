@@ -1,7 +1,9 @@
 package ch03.collection;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
@@ -25,6 +27,9 @@ public class MapTest {
             .filter(m ->  m.intValue()<90 )
             .collect(Collectors.toList());
 
-        System.out.println(listOfMarks);
+       Map map= student1.keySet().stream()
+            .collect(Collectors.groupingBy(String::length, Collectors.toMap(String::length,String::new)));
+        
+        System.out.println(map);
     }
 }

@@ -16,6 +16,7 @@ public class CustomComparatorTest2 {
                         Status.TRANSACTION_PENDING
                 }
         );
+        
         var comparator = Comparator.comparing(Status::name).thenComparingInt(Status::getOrder);
         Collections.sort(statuses, comparator);
         System.out.println(statuses);
