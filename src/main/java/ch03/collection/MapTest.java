@@ -1,23 +1,30 @@
 package ch03.collection;
 
+import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
+import java.util.stream.Collectors;
 
+// define two maps and iterate through functional programming
 public class MapTest {
     public static void main(String[] args) {
-        Map<String, String> address1 = Map.of("name", "Ranjit",
-                "city", "Berlin",
-                "country", "Germany");
-        Map<String, String> address2 = Map.ofEntries(
-                Map.entry("name", "Ranjit"),
-                Map.entry("city", "Berlin"),
-                Map.entry("country", "Germany")
-        );
-        BiConsumer<String, String> biConsumer = (k, v) -> {
-            System.out.println(String.format("Key: %s, value: %s", k, v));
-        };
-        address1.forEach(biConsumer);
-        address2.entrySet().forEach(System.out::println);
-        address1.values().forEach(System.out::println);
+       //Subject,marks
+        Map<String, Integer> student1 = Map.of("Math",78,
+            "Physics",98, 
+            "Chemistry",76);
+        
+        //student1.put("Computer",65);
+        
+        student1.forEach((k,v)-> {
+            System.out.println(String.format("Subject: %s, Marks: %d",k,v));
+        });
+        
+        List<Integer> listOfMarks= student1.values().stream()
+            .map(String::valueOf)
+            .map(Integer::valueOf)
+            .filter(m ->  m.intValue()<90 )
+            .collect(Collectors.toList());
+
+        System.out.println(listOfMarks);
     }
 }
